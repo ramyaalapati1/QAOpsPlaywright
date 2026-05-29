@@ -1,6 +1,6 @@
 const { test, expect, page } = require("@playwright/test");
 
-test.only('sample test', async ({ page }) => {
+test('sample test', async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/upload-download-test/index.html");
     const downloadButton = await page.locator("#downloadButton");
     console.log(await downloadButton.innerHTML());
