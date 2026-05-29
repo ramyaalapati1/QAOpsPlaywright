@@ -36,7 +36,7 @@ test("Screenshot Testing", async ({ page }) => {
     //Visual Testing
 });
 
-test.only("Visula Testing", async ({ page }) => {
+test("Visula Testing", async ({ page }) => {
 
     await page.goto("https://www.google.com/");
     //expect(await page.screenshot()).toMatchSnapshot('landing.png');
