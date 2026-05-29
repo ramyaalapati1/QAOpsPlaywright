@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <button onclick="mine()">Click Me </button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        // const fruits = { apple: 300, Banana: 200, Oranges: 500 };
+        // let text = "";
+        // for (let [fruit, amount] of Object.entries(fruits)) {
+        //     text += fruit + ":" + amount + "<br>";
+        // }
+        // document.getElementById("demo").innerHTML = text;
+        // let x = JSON.stringify(fruits);
+        // document.getElementById("demo1").innerHTML = x;
+        function person(name, age, color) {
+            this.age = age;
+            this.color = color;
+            this.name = name;
+        }
+        const dad = new person("krish", 40, "beige");
+        const mom = new person("Ram", 37, "beige");
+
+        dad.language = "English";
+
+        person.prototype.country = "Singapore"
+
+        document.getElementById("demo").innerHTML = dad.age + "  " + mom.age + " " + dad.language +
+            "  " + mom.country;
+
+
+
+    </script>
+</body>
+
+</html>
